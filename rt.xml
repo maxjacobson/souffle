@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Raging subscriptions in Google Reader</title>
+    </head>
+    <body>
+        <outline title="Criticverse" text="Criticverse">
+            <outline text="Action at a Distance"
+                title="Action at a Distance" type="rss"
+                xmlUrl="http://actionatadistance.net/rss" htmlUrl="http://actionatadistance.net/"/>
+            <outline text="Raging Thunderbolt"
+                title="Raging Thunderbolt" type="rss"
+                xmlUrl="http://ragingthunderbolt.wordpress.com/feed/" htmlUrl="http://ragingthunderbolt.wordpress.com"/>
+            <outline text="The Occasional Blargh"
+                title="The Occasional Blargh" type="rss"
+                xmlUrl="http://sterlingnorth.typepad.com/blog/atom.xml" htmlUrl="http://sterlingnorth.typepad.com/blog/"/>
+        </outline>
+        <outline title="Best" text="Best">
+            <outline text="Apple Outsider" title="Apple Outsider"
+                type="rss" xmlUrl="http://www.appleoutsider.com/feed/" htmlUrl="http://www.appleoutsider.com"/>
+            <outline text="cabel.me" title="cabel.me" type="rss"
+                xmlUrl="http://cabel.me/feed/" htmlUrl="http://cabel.me"/>
+            <outline text="ignorethecode.net" title="ignorethecode.net"
+                type="rss" xmlUrl="http://ignorethecode.net/blog/rss/" htmlUrl="http://ignorethecode.net"/>
+            <outline text="Kieran Healy" title="Kieran Healy" type="rss"
+                xmlUrl="http://kieranhealy.org/atom.xml" htmlUrl="http://kieranhealy.org//"/>
+            <outline text="Monday Note" title="Monday Note" type="rss"
+                xmlUrl="http://www.mondaynote.com/feed/" htmlUrl="http://www.mondaynote.com"/>
+        </outline>
+        <outline title="General Tech" text="General Tech">
+            <outline text="Bitsplitting.org" title="Bitsplitting.org"
+                type="rss" xmlUrl="http://bitsplitting.org/feed/" htmlUrl="http://bitsplitting.org"/>
+            <outline text="Signal vs. Noise" title="Signal vs. Noise"
+                type="rss" xmlUrl="http://37signals.com/svn/posts" htmlUrl="http://37signals.com/svn/posts"/>
+            <outline text="technoticRaccoon" title="technoticRaccoon"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/technoticRaccoon/rss" htmlUrl="http://technoticraccoon.com/"/>
+            <outline text="TorrentFreak" title="TorrentFreak" type="rss"
+                xmlUrl="http://feeds.feedburner.com/Torrentfreak" htmlUrl="http://torrentfreak.com"/>
+        </outline>
+        <outline title="Appleverse" text="Appleverse">
+            <outline text="512 Pixels" title="512 Pixels" type="rss"
+                xmlUrl="http://feeds.feedburner.com/512px" htmlUrl="http://512pixels.net"/>
+            <outline text="And now it’s all this"
+                title="And now it’s all this" type="rss"
+                xmlUrl="http://www.leancrew.com/all-this/feed/" htmlUrl="http://www.leancrew.com/all-this"/>
+            <outline text="asymco" title="asymco" type="rss"
+                xmlUrl="http://www.asymco.com/feed/" htmlUrl="http://www.asymco.com/"/>
+            <outline text="Chasing Perfection"
+                title="Chasing Perfection" type="rss"
+                xmlUrl="http://chasingperfection.co.uk/post?format=rss" htmlUrl="http://chasingperfection.co.uk/"/>
+            <outline text="Curious Rat" title="Curious Rat" type="rss"
+                xmlUrl="http://curiousrat.com/home?format=rss" htmlUrl="http://curiousrat.com/"/>
+            <outline text="Daring Fireball" title="Daring Fireball"
+                type="rss" xmlUrl="http://daringfireball.net/index.xml" htmlUrl="http://daringfireball.net/"/>
+            <outline text="Egg Freckles" title="Egg Freckles" type="rss"
+                xmlUrl="http://eggfreckles.net/feed" htmlUrl="http://eggfreckles.net"/>
+            <outline text="Macdrifter" title="Macdrifter" type="rss"
+                xmlUrl="http://www.macdrifter.com/feeds/all.atom.xml" htmlUrl="http://www.macdrifter.com"/>
+            <outline text="Marco.org" title="Marco.org" type="rss"
+                xmlUrl="http://www.marco.org/rss" htmlUrl="http://www.marco.org/"/>
+            <outline text="OneThirtySeven" title="OneThirtySeven"
+                type="rss" xmlUrl="http://one37.net/blog?format=rss" htmlUrl="http://one37.net/"/>
+            <outline text="patrickrhone / journal"
+                title="patrickrhone / journal" type="rss"
+                xmlUrl="http://patrickrhone.com/feed/" htmlUrl="http://patrickrhone.com"/>
+            <outline text="Rants and Rambles" title="Rants and Rambles"
+                type="rss"
+                xmlUrl="http://rantsandrambles.net/posts?format=rss" htmlUrl="http://rantsandrambles.net/"/>
+            <outline text="Shawn Blanc" title="Shawn Blanc" type="rss"
+                xmlUrl="http://shawnblanc.net/feed/" htmlUrl="http://shawnblanc.net"/>
+            <outline text="The Brooks Review" title="The Brooks Review"
+                type="rss" xmlUrl="http://brooksreview.net/feed/" htmlUrl="http://brooksreview.net"/>
+            <outline text="The Loop" title="The Loop" type="rss"
+                xmlUrl="http://www.loopinsight.com/feed/" htmlUrl="http://www.loopinsight.com"/>
+        </outline>
+    </body>
+</opml>
