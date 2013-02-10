@@ -24,6 +24,11 @@ From project root:
 * `shotgun web`
     * runs the web app locally at <http://localhost:9393>
 
+## Deploying
+
+* `git push origin master` goes to heroku
+* `git push` or `git push github master` goes to github
+
 ## Todos / thoughts / notes
 
 * add a database so people's feeds will persist and they can share with friends
