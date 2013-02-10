@@ -3,7 +3,7 @@
     <li><%= folder[:title] %>
       <ul>
         <% folder[:feeds].each do |feed| %>
-          <li><a href="<%= feed[:siteurl] %>"><%= feed[:title] %></a> -- <a href="<%= feed[:feedurl] %>">RSS</a></li>
+          <li><a href="<%= feed[:siteurl] %>"><%= feed[:title] %></a> &mdash; <a href="<%= feed[:feedurl] %>">RSS</a></li>
         <% end %>
       </ul>
     </li>
