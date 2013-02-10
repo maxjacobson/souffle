@@ -63,54 +63,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, ../../assets/scss/style.scss */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: local("VT323"), local("VT323-Regular"), url(http://themes.googleusercontent.com/static/fonts/vt323/v4/LfMzj2MWAZU6qzlnp1MNbg.woff) format("woff");
+}
+
+/* line 14, ../../assets/scss/style.scss */
 body {
   width: 500px;
   margin: 20px auto;
   background-color: #bed3d3;
+  font-family: helvetica, sans-serif;
 }
 
-/* line 12, ../../assets/scss/style.scss */
+/* line 21, ../../assets/scss/style.scss */
 h1 {
-  margin: 1em 0;
-  font-size: 3em;
+  font-size: 5em;
+  font-family: "VT323", serif;
 }
 
-/* line 17, ../../assets/scss/style.scss */
+/* line 27, ../../assets/scss/style.scss */
 p {
   margin: 1em 0;
 }
 
-/* line 21, ../../assets/scss/style.scss */
+/* line 31, ../../assets/scss/style.scss */
 a {
   color: #660033;
   text-decoration: none;
 }
-/* line 24, ../../assets/scss/style.scss */
+/* line 34, ../../assets/scss/style.scss */
 a:hover {
   text-decoration: underline;
   color: #cc6699;
 }
 
-/* line 30, ../../assets/scss/style.scss */
+/* line 40, ../../assets/scss/style.scss */
 ul {
   list-style: disc;
 }
-/* line 31, ../../assets/scss/style.scss */
+/* line 41, ../../assets/scss/style.scss */
 ul li {
   margin: 0.5em 0;
 }
-/* line 34, ../../assets/scss/style.scss */
+/* line 44, ../../assets/scss/style.scss */
 ul .folder {
   margin: 1em 0;
 }
-/* line 38, ../../assets/scss/style.scss */
+/* line 48, ../../assets/scss/style.scss */
 ul li > ul {
   list-style: circle;
   margin-left: 1em;
 }
 
-/* line 45, ../../assets/scss/style.scss */
+/* line 55, ../../assets/scss/style.scss */
 .folder:hover {
   cursor: hand;
   cursor: pointer;

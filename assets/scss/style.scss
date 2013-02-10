@@ -3,15 +3,25 @@ $bg: #BED3D3;
 $link: #660033;
 $hlink: #CC6699;
 
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: local('VT323'), local('VT323-Regular'), url(http://themes.googleusercontent.com/static/fonts/vt323/v4/LfMzj2MWAZU6qzlnp1MNbg.woff) format('woff');
+}
+
+
 body {
   width: 500px;
   margin: 20px auto;
   background-color: $bg;
+  font-family: helvetica, sans-serif;
 }
 
 h1 {
-  margin: 1em 0;
-  font-size: 3em;
+  // margin: 1em 0;
+  font-size: 5em;
+  font-family: 'VT323', serif;
 }
 
 p {
