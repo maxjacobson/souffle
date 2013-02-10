@@ -1,5 +1,11 @@
 <ul>
-<% @feeds.each do |feed| %>
-  <li><a href="<%= feed[:feed] %>"><%= feed[:title] %></a></li>
-<% end %>
+  <% @folders.each do |folder| %>
+    <li><%= folder[:title] %>
+      <ul>
+        <% folder[:feeds].each do |feed| %>
+          <li><a href="<%= feed[:url] %>"><%= feed[:title] %></a></li>
+        <% end %>
+      </ul>
+    </li>  
+  <% end %>
 </ul>

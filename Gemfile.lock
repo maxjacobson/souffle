@@ -1,20 +1,10 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.4.0)
     daemons (1.1.9)
     eventmachine (0.12.10)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
-    json (1.7.6)
-    kramdown (0.14.0)
-    multi_json (1.0.4)
     nokogiri (1.5.5)
     rack (1.4.1)
-    sass (3.2.4)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.1.0)
@@ -30,11 +20,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
-  json
-  kramdown
   nokogiri
-  sass
   shotgun
   sinatra (= 1.1.0)
   thin

@@ -1,15 +1,22 @@
 require 'sinatra'
 require 'nokogiri'
 
-def xml_to_hash(xml)
+def interpret_subs(xml)
   document = Nokogiri::XML(xml)
-  elements = document.xpath("//outline/outline")
-  feeds = Array.new
-  elements.each do |elem|
-    feeds.push({:title => elem["title"], :feed => elem["xmlUrl"]})
+  outlines = document.xpath("//outline")
+  folders = Array.new
+  outlines.each do |outline|
+    if outline.xpath("child::outline").length > 0
+      folder = Hash.new
+      folder[:title] = outline["title"]
+      folder[:feeds] = Array.new
+      outline.xpath("child::outline").each do |feed|
+        folder[:feeds].push({:title => feed["title"], :url => feed["xmlUrl"]})
+      end
+      folders.push(folder)
+    end
   end
-  puts feeds
-  return feeds
+  return folders
 end
 
 get '/' do
@@ -17,7 +24,6 @@ get '/' do
 end
 
 post '/' do
-  @feeds = xml_to_hash(params[:feed_text].encode('UTF-8'))
-  puts @feeds
+  @folders = interpret_subs(params[:feed_text].encode('UTF-8'))
   erb :list
 end
