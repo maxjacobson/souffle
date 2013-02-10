@@ -1,5 +1,5 @@
 <ul>
-<% @feeds.each_value do |feed| %>
-  <li><%= feed %></li>
+<% @feeds.each do |feed| %>
+  <li><a href="<%= feed[:feed] %>"><%= feed[:title] %></a></li>
 <% end %>
 </ul>
