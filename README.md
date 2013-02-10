@@ -2,15 +2,21 @@
 
 (a terrible code name)
 
+<http://souffle.herokuapp.com>
+
 Site to upload your Google Reader feeds and share what you read and see what your friends are reading.
+
+## Requirements
+
+* run `bundle install` to get all of the gems needed for this project
+* install [coffeescript][] if you want to work on that
+
+[coffeescript]: http://coffeescript.org
 
 ## Running
 
 From project root:
 
-* `bundle install`
-    * probably only once
-    * to get up and running with all the gems needed to work on this
 * `compass watch`
     * compiles the SASS, watches for changes
 * `coffee -j public/js/app.js -cw assets/coffee/`
@@ -18,9 +24,10 @@ From project root:
 * `shotgun web`
     * runs the web app locally at <http://localhost:9393>
 
-## Todos
+## Todos / thoughts / notes
 
 * add a database so people's feeds will persist and they can share with friends
+* (should this be a rails app? probably, right?)
 * allow the removal of feeds that you don't want to share
 * add a "cart" where you can add feeds you find on other people's profiles, and it'll generate an xml file for you to import into GR
 * explore the possibility of authenticating with google and getting user permission to access their subscriptions w/o them having to export/unzip/upload
