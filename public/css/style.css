@@ -101,24 +101,33 @@ a:hover {
 }
 
 /* line 40, ../../assets/scss/style.scss */
+.rsslink {
+  color: #AD7C13;
+}
+/* line 42, ../../assets/scss/style.scss */
+.rsslink:hover {
+  color: #660033;
+}
+
+/* line 47, ../../assets/scss/style.scss */
 ul {
   list-style: disc;
 }
-/* line 41, ../../assets/scss/style.scss */
+/* line 48, ../../assets/scss/style.scss */
 ul li {
   margin: 0.5em 0;
 }
-/* line 44, ../../assets/scss/style.scss */
+/* line 51, ../../assets/scss/style.scss */
 ul .folder {
   margin: 1em 0;
 }
-/* line 48, ../../assets/scss/style.scss */
+/* line 55, ../../assets/scss/style.scss */
 ul li > ul {
   list-style: circle;
   margin-left: 1em;
 }
 
-/* line 55, ../../assets/scss/style.scss */
+/* line 62, ../../assets/scss/style.scss */
 .folder:hover {
   cursor: hand;
   cursor: pointer;

@@ -26,4 +26,6 @@ From project root:
 * explore the possibility of authenticating with google and getting user permission to access their subscriptions w/o them having to export/unzip/upload
 * sync back to GR? like, have an "unsubscribe" button...?
 * let people write notes to explain why they like something
-
+* find people who subscribe to the same sites that you do
+    * so, if you're looking at a feed, it'll give a list of people who read it
+    * also: it'll share people who you have a lot of overlap with

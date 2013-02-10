@@ -22,7 +22,11 @@ def interpret_subs(xml)
     end
   end
   folders.sort_by! { |folder| folder[:title] } # alphabetize folders
-  return folders, strayfeeds
+  total = strayfeeds.length
+  folders.each do |folder|
+    total += folder[:feeds].length
+  end
+  return folders, strayfeeds, total
 end
 
 get '/' do
@@ -30,6 +34,6 @@ get '/' do
 end
 
 post '/' do
-  @folders, @strayfeeds = interpret_subs(params[:feed_text])
+  @folders, @strayfeeds, @total = interpret_subs(params[:feed_text])
   erb :list
 end

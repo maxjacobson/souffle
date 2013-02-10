@@ -37,6 +37,13 @@ a {
   }
 }
 
+.rsslink {
+  color: #AD7C13;
+  &:hover {
+    color: $link;
+  }
+}
+
 ul {
   li {
     margin: 0.5em 0;
