@@ -1,5 +1,7 @@
 source :rubygems
 gem 'sinatra', '1.1.0'
 gem 'thin'
+gem 'compass'
+gem 'sass'
 gem 'shotgun'
 gem 'nokogiri'

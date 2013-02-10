@@ -1,13 +1,49 @@
-$bg: #8CFF8A;
+@import "compass/reset";
+$bg: #BED3D3;
+$link: #660033;
+$hlink: #CC6699;
 
 body {
+  width: 500px;
+  margin: 20px auto;
   background-color: $bg;
 }
 
-input, textarea {
-  display: block;
+h1 {
+  margin: 1em 0;
+  font-size: 3em;
 }
 
-pre {
-  background-color: white;
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: $hlink;
+  }
+}
+
+ul {
+  li {
+    margin: 0.5em 0;
+  }
+  .folder {
+    margin: 1em 0;
+  }
+  list-style: disc;
+  li > ul {
+    list-style: circle;
+    margin-left: 1em;
+  }
+}
+
+.folder {
+  &:hover {
+    cursor: hand;
+    cursor: pointer;
+  }
 }

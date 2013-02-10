@@ -2,16 +2,25 @@
 (function() {
 
   $(document).ready(function() {
-    return $("#file_picker").on("change", function() {
+    $("#file_button").on("click", function() {
+      return $("#file_picker").click();
+    });
+    $("#file_picker").on("change", function() {
       var reader, selected_file;
       selected_file = $("#file_picker").get(0).files[0];
       reader = new FileReader();
       reader.onload = function(event) {
         var feed_text;
         feed_text = event.target.result;
-        return $("#feed_text").val(feed_text);
+        $("#feed_text").val(feed_text);
+        return $("#file_form").submit();
       };
-      return reader.readAsText(selected_file);
+      if (selected_file.name.match(/\.xml$/)) {
+        return reader.readAsText(selected_file);
+      }
+    });
+    return $(".folder").on("click", function() {
+      return $(this).children().toggle('fast');
     });
   });
 
