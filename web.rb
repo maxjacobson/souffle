@@ -11,7 +11,7 @@ def interpret_subs(xml)
       folder[:title] = outline["title"]
       folder[:feeds] = Array.new
       outline.xpath("child::outline").each do |feed|
-        folder[:feeds].push({:title => feed["title"], :url => feed["xmlUrl"]})
+        folder[:feeds].push({:title => feed["title"], :siteurl => feed["htmlUrl"], :feedurl => feed["xmlUrl"]})
       end
       folders.push(folder)
     end
