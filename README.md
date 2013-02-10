@@ -25,4 +25,5 @@ From project root:
 * add a "cart" where you can add feeds you find on other people's profiles, and it'll generate an xml file for you to import into GR
 * explore the possibility of authenticating with google and getting user permission to access their subscriptions w/o them having to export/unzip/upload
 * sync back to GR? like, have an "unsubscribe" button...?
+* let people write notes to explain why they like something
 
