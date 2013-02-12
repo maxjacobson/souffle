@@ -5,16 +5,18 @@
 
 $(document).ready ->
   $("#file_button").on "click", ->
-    $("#file_picker").click()
+    $("#file_picker").click() # forwards the click event to the hidden file input
 
   $("#file_picker").on "change", ->
     selected_file = $("#file_picker").get(0).files[0]
     reader = new FileReader()
     reader.onload = (event) ->
-      feed_text = event.target.result
-      $("#feed_text").val(feed_text)
-      $("#file_form").submit()
-    reader.readAsText(selected_file) if selected_file.name.match(/\.xml$/)
+      feed_text = event.target.result # reads the file, assigns the text to this variable
+      $("#feed_text").val(feed_text) # inserts the text into a hidden textarea
+      $("#file_form").submit() # submits the form
+    reader.readAsText(selected_file) if selected_file.name.match(/\.xml$/) # dont want to read non-xml files
 
   $(".folder").on "click", ->
-    $(this).children().toggle 'fast'
+    $(this).next().toggle 'fast' # animates to show/hide the feeds in this folder
+    $(this).children().toggle() # toggles the little arrow's direction
+

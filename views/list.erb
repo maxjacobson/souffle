@@ -1,8 +1,8 @@
 <p>Your <%= @total %> feeds:</p>
 <ul>
   <% @folders.each do |folder| %>
-    <li class="folder"><%= folder[:title] %> (<%= folder[:feeds].length %>)
-      <ul>
+    <li><span class="folder"><%= folder[:title] %> (<%= folder[:feeds].length %>) <span style="display:none">&raquo;</span><span>&laquo;</span></span>
+      <ul class="feed_list" style="display: none">
         <% folder[:feeds].each do |feed| %>
           <li class="feed"><a href="<%= feed[:siteurl] %>"><%= feed[:title] %></a> <a href="<%= feed[:feedurl] %>" class="rsslink">RSS</a></li>
         <% end %>

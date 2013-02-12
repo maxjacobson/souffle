@@ -20,7 +20,8 @@
       }
     });
     return $(".folder").on("click", function() {
-      return $(this).children().toggle('fast');
+      $(this).next().toggle('fast');
+      return $(this).children().toggle();
     });
   });
 
