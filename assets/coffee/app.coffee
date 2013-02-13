@@ -19,4 +19,3 @@ $(document).ready ->
   $(".folder").on "click", ->
     $(this).next().toggle 'fast' # animates to show/hide the feeds in this folder
     $(this).children().toggle() # toggles the little arrow's direction
-
