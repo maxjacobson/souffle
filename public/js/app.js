@@ -15,13 +15,23 @@
         $("#feed_text").val(feed_text);
         return $("#file_form").submit();
       };
-      if (selected_file.name.match(/\.xml$/)) {
+      if (selected_file.name.match(/\.xml$|\.opml/i)) {
         return reader.readAsText(selected_file);
       }
     });
-    return $(".folder").on("click", function() {
+    $(".folder").on("click", function() {
       $(this).next().toggle('fast');
       return $(this).children().toggle();
+    });
+    $(".expand_all").on("click", function() {
+      $(".feed_list").show('fast');
+      $(this).attr('disabled', 'true');
+      return $('.collapse_all').removeAttr('disabled');
+    });
+    return $(".collapse_all").on("click", function() {
+      $(".feed_list").hide('fast');
+      $(this).attr('disabled', 'true');
+      return $('.expand_all').removeAttr('disabled');
     });
   });
 
