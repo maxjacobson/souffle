@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+
+<h2><%= @feedlist.name %></h2>
+
+<h3>feeds</h3>
+
+<ol>
+	<% @feedlist.feeds.each do |feed| %>
+		<li><%= link_to feed.title, feed.site_url  %> - <code><%= feed.feed_url %></code></li>
+	<% end %>
+</ol>
+
+
+
+<%= link_to 'Edit', edit_feedlist_path(@feedlist) %> |
+<%= link_to 'Back', feedlists_path %>
